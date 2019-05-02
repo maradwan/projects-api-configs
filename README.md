@@ -4,6 +4,8 @@
 # Install Flask
 * pip install flask
 
+# Install pytest for testing
+* pip install pytest
 
 ## Run
 
@@ -23,6 +25,8 @@
 
     $ python app.py
 
+    # To Test
+    $ pytest -vv test.py
 
 ## Add new data 
     $ curl --request POST --url 'http://127.0.0.1:5000/configs' -H 'content-type: application/json' --data '{ "name": "database", "data": { "ip": "192.168.1.1", "hostname": "eg001", "uptime": 7.3, "env": "prod" }}'
